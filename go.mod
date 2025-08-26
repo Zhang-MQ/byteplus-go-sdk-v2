@@ -1,4 +1,4 @@
-module github.com/byteplus-sdk/byteplus-go-sdk-v2
+module github.com/Zhang-MQ/byteplus-go-sdk-v2
 
 go 1.14
 
