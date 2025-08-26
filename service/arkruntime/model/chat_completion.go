@@ -280,13 +280,14 @@ type LogProbs struct {
 
 type ResponseFormatType string
 
-type ResponseFormat struct {
-	Type   ResponseFormatType `json:"type"`
-	Schema interface{}        `json:"schema,omitempty"`
+type ResponseFormat struct {	
+	Type       ResponseFormatType `json:"type"`
+	JsonSchema interface{}        `json:"json_schema,omitempty"`
 }
 
 const (
 	ResponseFormatJsonObject ResponseFormatType = "json_object"
+	ResponseFormatJsonSchema ResponseFormatType = "json_schema"
 	ResponseFormatText       ResponseFormatType = "text"
 )
 
